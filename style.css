@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+:root {
+  background-color: cadetblue;
+  text-decoration-color: aliceblue;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    color: rgb(0, 0, 0);
+}
+
+body {
+    padding: 1em;
+    background-color: cadetblue;
+}
+
+nav {
+    margin: 1em auto 3em auto;
+    width: min(1000px, 100%);
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 2em;
+}
+
+nav li:first-child {
+    margin-right: auto;
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+header, section {
+    margin: 2em auto;
+    width: min(75em, 100%);
+    background-color: antiquewhite;
+    padding: min(2em, 15%);
+    border-radius: 1em;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3em;
+}
+
+header img {
+    max-width: 100%;
+    border-radius: 1em;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.text-container {
+    flex: 0 1 34em;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+.text-container p {
+    margin: .75em 0 1em 0;
+    font-size: 1.25em;
+}
+
+.cta-button {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: cadetblue;
+    padding: .75em 1.25em;
+    border-radius: .5em;
+    font-weight: 600;
+}
+
+section {
+    padding: 3em min(2em, 15%);
+    text-align: center;
+}
+
+section p {
+    margin-top: 1em;
+    font-size: 1.25em;
+}
+
+section#my-work {
+    background-color: antiquewhite;
+}
+
+.grid-container {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+details {
+    margin-top: 1em;
+    border-radius: 1em;
+}
+
+details summary {
+    padding: 1em;
+    font-size: 1.2em;
+}
+
+details p {
+    padding: 0 2em 2em 2em;
+}
+
+footer {
+    padding-bottom: 1.5em;
+    text-align: center;
+}
+
+footer a {
+    margin: 0 1em;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media(max-width: 988px){
+    header {
+        text-align: center;
+    }
+
+    header .text-container {
+        padding-top: 0;
+    }
+}
+
+@media(max-width: 640px) {
+    nav li {
+        display: none;
+    }
+
+    nav li:first-child,
+    nav li:last-child {
+        display: block;
+    }
+
+    header {
+        margin-top: 0;
+    }
+
+    .cta-button {
+        margin-top: .5em;
+        width: 100%;
+    }
+}
