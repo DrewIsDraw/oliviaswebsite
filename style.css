@@ -118,6 +118,7 @@ details {
 details summary {
     padding: 1em;
     font-size: 1.2em;
+    font-weight:bold;
 }
 
 details p {
